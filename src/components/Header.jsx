@@ -29,16 +29,20 @@ const Header = () => {
       } fixed w-full right-0 left-0 z-10 transition-all duration-300`}
     >
       <div className="container mx-auto flex justify-between items-center">
+        
         {/* logo */}
         <a href='#'>
           <img src={Logo} alt='' />
         </a>
+
         {/* nav */}
         <div className="hidden lg:flex">
           <Nav />
         </div>
+
         {/* program */}
         <Program />
+
         {/* nav mobile button*/}
         <div 
           className="lg:hidden cursor-pointer"
@@ -46,6 +50,7 @@ const Header = () => {
         >
           <CgMenuRight className="text-blue text-3xl" />
         </div>
+        
         {/* mobile nav */}
         <div className={`${
           navMobile 
