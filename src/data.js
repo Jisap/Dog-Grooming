@@ -17,7 +17,7 @@ export const navigation = [
   },
   {
     name: 'prices',
-    href: '#',
+    href: '#prices',
   },
   {
     name: 'contact',
@@ -25,7 +25,7 @@ export const navigation = [
   },
   {
     name: 'get an appointment',
-    href: '#',
+    href: '#appointment',
   },
 ];
 

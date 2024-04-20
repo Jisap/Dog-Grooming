@@ -5,7 +5,7 @@ import DogImg from '../assets/img/dogs/dog-appointment.png'
 
 const Appointment = () => {
   return (
-    <section className='bg-yellow-secondary py-12 lg:pb-12 lg:mt-32 relative min-h-[584px]'>
+    <section className='bg-yellow-secondary py-12 lg:pb-12 lg:mt-32 relative min-h-[584px]' id='appointment'>
       <div className='container mx-auto'>
         <div>
           {/* image */}
