@@ -39,7 +39,7 @@ const Prices = () => {
                   {/* category text*/}
                   <div 
                     className={`${ index === idx 
-                      ? 'border-b-4 border-orange transition-all after:lg:w-5 after:lg:h-5 after:bg-triangle after:lg:bg-no-repeat after:lg:block after:lg:left-[130px] after:lg:absolute after:lg:-bottom-6 relative' 
+                      ? 'border-b-4 border-orange transition-all after:xl:w-5 after:lg:w-5  after:lg:h-5 after:xl:h-5 after:bg-triangle after:xl:bg-no-repeat after:lg:bg-no-repeat after:xl:block after:lg:block after:lg:left-[100px] after:xl:left-[130px] after:lg:absolute after:xl:absolute after:lg:-bottom-6 after:xl:-bottom-6 relative' 
                       : 'border-b-4 border-transparent'
                     } pb-4 mb-12`}>
                     <div className='hidden lg:block capitalize'>{dogCategory}</div>
