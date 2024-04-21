@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { bundleData } from '../data.js';
 import Bundles from './Bundles';
  
 const Prices = () => {
 
   const[index, setIndex] = useState(0);
-  const[bundles, setBundles] = useState([])
+  const[bundles, setBundles] = useState([]);
+
+  useEffect(() => {
+    setBundles(bundleData[0].services) // [{smart}, {premium}, {royal}]
+  },[]);
+
+  const getBundle = (name) => {
+    const newBundle = bundleData.find((bundle) => { // [{small}, {medium}, {big}, {super}]
+      return bundle.name === name;
+    });
+    setBundles(newBundle.services)
+  }
 
   return (
     <section className='py-12 lg:py-24' id='prices'>
@@ -22,8 +33,12 @@ const Prices = () => {
               const {name, image, dogCategory} = item;
               return (
                 <div 
+                  key={idx}
                   className='cursor-pointer text-center'
-                  onClick={() => setIndex(idx)}  
+                  onClick={() => {
+                    setIndex(idx)
+                    getBundle(name)  
+                  }}  
                 >
                   {/* image */}
                   <div className='mb-2 lg:mb-8 hover:scale-105 transition-all duration-300'>
@@ -48,6 +63,8 @@ const Prices = () => {
               )
           })}
         </div>
+        {/* bundles */}
+        <Bundles bundles={bundles}/>
       </div>
     </section>
   )
