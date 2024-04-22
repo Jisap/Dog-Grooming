@@ -21,7 +21,7 @@ export const navigation = [
   },
   {
     name: 'contact',
-    href: '#',
+    href: '#contact',
   },
   {
     name: 'get an appointment',

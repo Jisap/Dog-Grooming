@@ -14,6 +14,7 @@ const App = () => {
       <Appointment />
       <Prices />
       <Contact />
+      <Footer />
       <div className="h-[2000px]"></div>
     </div>
   )

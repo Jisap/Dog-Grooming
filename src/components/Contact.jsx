@@ -5,7 +5,7 @@ import  DogImg from '../assets/img/dogs/dog-contact.png'
 
 const Contact = () => {
   return (
-    <section className="bg-yellow-secondary pt-6">
+    <section className="bg-yellow-secondary pt-6" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-around">
           {/* image */}
