@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Appointment from './components/Appointment'
 import Prices from './components/Prices'
 import Contact from './components/Contact'
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -15,7 +16,6 @@ const App = () => {
       <Prices />
       <Contact />
       <Footer />
-      <div className="h-[2000px]"></div>
     </div>
   )
 };

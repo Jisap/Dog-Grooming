@@ -17,7 +17,7 @@ const Appointment = () => {
           flex flex-col justify-start items-center gap-y-4'>
             <h2 className='h2 my-4'>Get an appointment</h2>
             <input className='input-control' type='text' placeholder='Full name'/>
-            <input className='input-control' type='text' placeHolder='Email addres'/>
+            <input className='input-control' type='text' placeholder='Email addres'/>
             <input className='input-control' type='text' placeholder='Phone number'/>
             <button className='btn w-full max-w-[514px]'>
               Send
