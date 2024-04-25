@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { bundleData } from '../data.js';
 import Bundles from './Bundles';
- 
+import { motion } from 'framer-motion'
+import { fadeIn } from '../lib/variant' 
+
 const Prices = () => {
 
   const[index, setIndex] = useState(0);
@@ -22,13 +24,25 @@ const Prices = () => {
     <section className='py-12 lg:py-24' id='prices'>
       <div className='container mx-auto'>
         {/* text */}
-        <div className='text-center mb-20'>
+        <motion.div 
+          variants={fadeIn('up', 0.8)}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.2 }} 
+          className='text-center mb-20'
+        >
           <div className='text-orange font-semibold mb-3'>Our Prices</div>
           <h2 className='h2 mb-3'>How Big Your Dog is ?</h2>
           <p className='text-lg text-blue'>Choose your dog category</p>
-        </div>
+        </motion.div>
         {/* grid */}
-        <div className='grid grid-cols-4 gap-4 lg:gap-[30px]'>
+        <motion.div 
+          variants={fadeIn('up', 1)}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.2 }} 
+          className='grid grid-cols-4 gap-4 lg:gap-[30px]'
+        >
           {bundleData.map((item, idx) => {
               const {name, image, dogCategory} = item;
               return (
@@ -62,7 +76,7 @@ const Prices = () => {
                 </div>
               )
           })}
-        </div>
+        </motion.div>
         {/* bundles */}
         <Bundles bundles={bundles}/>
       </div>

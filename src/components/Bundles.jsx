@@ -1,11 +1,18 @@
 import React from 'react';
 import { BsCheckCircleFill } from 'react-icons/bs'
-
+import { motion } from 'framer-motion'
+import { fadeIn } from '../lib/variant' 
 
 
 const Bundles = ({bundles}) => {
   return (
-    <div className='flex flex-col md:flex-row justify-between gap-[30px]'>
+    <motion.div 
+      variants={fadeIn('up', 1)}
+      initial="hidden"
+      whileInView={'show'}
+      viewport={{ once: false, amount: 0.2 }} 
+      className='flex flex-col md:flex-row justify-between gap-[30px]'
+    >
       {bundles.map((bundle, index) => {
         const {name, price, list} = bundle
         return (
@@ -15,7 +22,7 @@ const Bundles = ({bundles}) => {
           >
             {/* price */}
             <div className='text-5xl font-bold text-blue mb-4'>
-              {price}
+              ${price}
             </div>
             {/* name */}
             <div className='capitalize mb-12 text-blue font-medium'>
@@ -40,7 +47,7 @@ const Bundles = ({bundles}) => {
           </div>
         )
       })}
-    </div>
+    </motion.div>
   )
 };
 

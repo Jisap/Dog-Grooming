@@ -1,12 +1,19 @@
 import React from 'react';
 import DogImg from '../assets/img/dogs/dog-appointment.png'
-
+import { motion } from 'framer-motion'
+import { fadeIn } from '../lib/variant'
 
 
 const Appointment = () => {
   return (
     <section className='bg-yellow-secondary py-12 lg:pb-12 lg:mt-32 relative min-h-[584px]' id='appointment'>
-      <div className='container mx-auto'>
+      <motion.div
+        variants={fadeIn('up', 0.8)}
+        initial="hidden"
+        whileInView={'show'}
+        viewport={{ once: false, amount: 0.2 }}  
+        className='container mx-auto'
+      >
         <div>
           {/* image */}
           <div className='hidden w-full max-w-[790px] mx-auto lg:flex justify-center'>
@@ -24,7 +31,7 @@ const Appointment = () => {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 };

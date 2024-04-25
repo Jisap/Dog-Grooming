@@ -13,19 +13,23 @@ import { AiFillYoutube, AiFillInstagram, AiFillGithub } from 'react-icons/ai';
 export const navigation = [
   {
     name: 'home',
-    href: '#',
+    href: '#home',
+    offset: -100
   },
   {
     name: 'prices',
     href: '#prices',
+    offset: -80
   },
   {
     name: 'contact',
     href: '#contact',
+    offset: 0
   },
   {
     name: 'get an appointment',
     href: '#appointment',
+    offset: -40
   },
 ];
 
