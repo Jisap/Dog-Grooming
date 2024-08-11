@@ -19,11 +19,11 @@ const Program = () => {
       <div className="text-sm">
         {/* show only in desktop mode */}
         <div className="hidden lg:flex">
-          Opening Hours: Mon - Sun: 10am - 6pm
+          Horario:  Lunes - Sábado:  10am - 6pm
         </div>
         {/* show only in mobile mode */}
         <div className="lg:hidden text-right">
-          Mon - Sun: 10am - 6pm
+          Lunes - Sábado: 10am - 6pm
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ const Prices = () => {
   }
 
   return (
-    <section className='py-12 lg:py-24' id='prices'>
+    <section className='py-12 lg:py-12' id='prices'>
       <div className='container mx-auto'>
         {/* text */}
         <motion.div 
@@ -31,9 +31,9 @@ const Prices = () => {
           viewport={{ once: false, amount: 0.2 }} 
           className='text-center mb-20'
         >
-          <div className='text-orange font-semibold mb-3'>Our Prices</div>
-          <h2 className='h2 mb-3'>How Big Your Dog is ?</h2>
-          <p className='text-lg text-blue'>Choose your dog category</p>
+          <div className='text-orange font-semibold mb-3'>Nuestras camadas</div>
+          <h2 className='h2 mb-3'>¿ Que tipo de raza buscas ? ?</h2>
+          <p className='text-lg text-blue'>Elige tu favorito</p>
         </motion.div>
         {/* grid */}
         <motion.div 

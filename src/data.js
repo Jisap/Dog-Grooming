@@ -36,27 +36,25 @@ export const navigation = [
 export const heroSlider = [
   {
     id: 1,
-    title: 'We take care of your pet.',
+    title: 'Pequeños compañeros, grandes alegrías.',
     image: HeroSlideImage1 ,
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.',
+      'Elige a tu nuevo amigo y prepárate para vivir experiencias llenas de cariño y diversión.',
     buttonText: 'Get an appointment',
   },
   {
     id: 2,
-    title: 'Lorem ipsum dolor sit.',
+    title: 'La compañía perfecta para cualquier hogar',
     image: HeroSlideImage2 ,
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.',
-    buttonText: 'Get an appointment',
+      'Conecta con un pequeño amigo que transformará tu hogar con su ternura y energía.',
   },
   {
     id: 3,
-    title: 'Nunc odio in et, lectus sit.',
+    title: 'Encuentra la dulzura en formato mini hoy mismo.',
     image: HeroSlideImage3 ,
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.',
-    buttonText: 'Get an appointment',
+      'Descubre el compañero ideal para llenar tu vida de amor, alegría y momentos inolvidables',
   },
 ];
 
@@ -64,148 +62,159 @@ export const bundleData = [
   {
     id: 1,
     image: DogCateg1 ,
-    name: 'small',
-    dogCategory: '1 - 9 kg',
+    name: 'Westies',
+    dogCategory: 'West Higland White',
     services: [
       {
-        name: 'smart',
-        price: 20,
+        name: '2 meses',
+        price: 150,
         list: ['wash', 'ears cleaning', 'nail cut', 'perfumed'],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
       {
-        name: 'premium',
-        price: 40,
+        name: '3 meses',
+        price: 150,
         list: [
-          'all smart services',
-          'service 1',
-          'service 2',
-          'service 3',
-          'service 4',
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
         ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
       {
-        name: 'royal',
-        price: 60,
+        name: '4 meses',
+        price: 130,
         list: [
-          'all premium services',
-          'service 1',
-          'service 2',
-          'service 3',
-          'service 4',
-          'service 5',
-          'service 6',
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
         ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
     ],
   },
   {
     id: 2,
-    name: 'medium',
+    name: 'Shih Tzu',
     image: DogCateg2 ,
-    dogCategory: '10 - 19 kg',
+    dogCategory: 'Shihtzu',
     services: [
       {
-        name: 'smart',
+        name: '2 meses',
         price: 80,
-        list: ['wash', 'ears cleaning', 'nail cut', 'perfumed'],
+        list: [
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
+        ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
       {
-        name: 'premium',
+        name: '3 meses',
         price: 100,
         list: [
-          'all smart services',
-          'service 1',
-          'service 2',
-          'service 3',
-          'service 4',
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
         ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
       {
-        name: 'royal',
+        name: '4 meses',
         price: 120,
         list: [
-          'all premium services',
-          'service 1',
-          'service 2',
-          'service 3',
-          'service 4',
-          'service 5',
-          'service 6',
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
         ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
     ],
   },
   {
     id: 3,
-    name: 'big',
+    name: 'Biewer',
     image: DogCateg3 ,
-    dogCategory: '20 - 29 kg',
+    dogCategory: 'Biewer Yorkshire Terrier',
     services: [
       {
-        name: 'smart',
+        name: '2 meses',
         price: 140,
-        list: ['wash', 'ears cleaning', 'nail cut', 'perfumed'],
+        list: [
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
+        ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
       {
-        name: 'premium',
+        name: '3 meses',
         price: 160,
         list: [
-          'all smart services',
-          'service 1',
-          'service 2',
-          'service 3',
-          'service 4',
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
         ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
       {
-        name: 'royal',
+        name: '4 meses',
         price: 180,
         list: [
-          'all premium services',
-          'service 1',
-          'service 2',
-          'service 3',
-          'service 4',
-          'service 5',
-          'service 6',
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
         ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
     ],
   },
   {
     id: 4,
-    name: 'super',
+    name: 'Bichon Maltes',
     image: DogCateg4 ,
-    dogCategory: '30 - 39 kg',
+    dogCategory: 'Maltes',
     services: [
       {
-        name: 'smart',
+        name: '2 meses',
         price: 200,
-        list: ['wash', 'ears cleaning', 'nail cut', 'perfumed'],
+        list: [
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
+        ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
       {
-        name: 'premium',
+        name: '3 meses',
         price: 210,
         list: [
-          'all smart services',
-          'service 1',
-          'service 2',
-          'service 3',
-          'service 4',
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
         ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
       {
-        name: 'royal',
+        name: '4 meses',
         price: 220,
         list: [
-          'all premium services',
-          'service 1',
-          'service 2',
-          'service 3',
-          'service 4',
-          'service 5',
-          'service 6',
+          'Desparasitados',
+          'Cartilla',
+          'Microchip',
+          'Garantía vírica',
         ],
+        photos: [DogCateg1, DogCateg2, DogCateg3, DogCateg4]
       },
     ],
   },
@@ -225,3 +234,30 @@ export const social = [
     href: '#',
   },
 ];
+
+export const brandImages = [
+  {
+    src: 'src/assets/img/brands/brand1.png',
+    href: '#',
+  },
+  {
+    src: 'src/assets/img/brands/brand2.png',
+    href: '#',
+  },
+  {
+    src: 'src/assets/img/brands/brand3.png',
+    href: '#',
+  },
+  {
+    src: 'src/assets/img/brands/brand4.png',
+    href: '#',
+  },
+  {
+    src: 'src/assets/img/brands/brand5.png',
+    href: '#',
+  },
+  {
+    src: 'src/assets/img/brands/brand6.png',
+    href: '#',
+  },
+]

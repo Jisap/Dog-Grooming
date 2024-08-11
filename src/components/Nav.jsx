@@ -4,9 +4,9 @@ import { Link as ScrollLink } from 'react-scroll'
 
 const links = [
   { name: 'Home', target: 'home', offset: -100 },
-  { name: 'Appointment', target: 'appointment', offset: -80 },
-  { name: 'Prices', target: 'prices', offset: -40 },
-  { name: 'Contact', target: 'contact', offset: 0 },
+  { name: 'Citas', target: 'appointment', offset: -80 },
+  { name: 'Precios', target: 'prices', offset: -40 },
+  { name: 'Contacto', target: 'contact', offset: 0 },
 ]
 
 const Nav = () => {

@@ -36,6 +36,7 @@ export default {
       },
       white: '#fff',
       pink: 'pink',
+      black: 'black',
       transparent: 'transparent',
     },
     extend: {

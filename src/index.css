@@ -11,6 +11,10 @@
     @apply text-2xl lg:text-4xl text-blue font-bold;
   }
 
+  .h3 {
+    @apply text-xl lg:text-2xl text-blue font-semibold
+  }
+
   .btn,
   .input-control {
     @apply text-[15px] h-16 rounded-full outline-none;

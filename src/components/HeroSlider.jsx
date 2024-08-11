@@ -8,6 +8,8 @@ import { Pagination, Navigation, Autoplay } from 'swiper'
 import { heroSlider } from '../data'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../lib/variant'
+import { Link as ScrollLink } from 'react-scroll'
+
 
 
 const HeroSlider = () => {
@@ -51,15 +53,23 @@ const HeroSlider = () => {
                   >
                     {subtitle}
                   </motion.p>
-                  <motion.button
-                    variants={fadeIn('up', 0.8)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.2 }}
-                    className="btn mb-8 lg:mb-0"
+                  <ScrollLink
+                    offset={-50}
+                    to="appointment"
+                    smooth
+                    spy
+                    key={123}
                   >
-                    Contact us
-                  </motion.button>
+                    <motion.button
+                      variants={fadeIn('up', 0.8)}
+                      initial="hidden"
+                      whileInView={"show"}
+                      viewport={{ once: false, amount: 0.2 }}
+                      className="btn mb-8 lg:mb-0"
+                    >
+                      Contact us
+                    </motion.button>
+                  </ScrollLink>
                 </div>
                 <motion.div 
                   variants={fadeIn('left', 0.8)}
